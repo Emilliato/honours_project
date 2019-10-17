@@ -1,0 +1,101 @@
+web_1  | [29/Apr/2019 12:52:06]"POST /search/ HTTP/1.1" 500 745
+web_1  | [29/Apr/2019 12:52:11]"GET /enrichment HTTP/1.1" 301 0
+web_1  | [29/Apr/2019 12:52:11]"GET /enrichment/ HTTP/1.1" 200 8107
+web_1  | [29/Apr/2019 12:52:24]"GET /comparison/ HTTP/1.1" 200 7714
+web_1  | Errors from MEME text parser:
+web_1  | The pspm of motif ATF1_si.HOCOMOCO has a width value -1 which is invalid as it is not larger than zero.
+web_1  | Warning: the database "Atf1" did not contain ANY loadable motifs!
+web_1  | Errors from MEME text parser:
+web_1  | The pspm of motif ATF1_si.HOCOMOCO has a width value -1 which is invalid as it is not larger than zero.
+web_1  | Warning: the database "Atf1" did not contain ANY loadable motifs!
+web_1  | Warning: Target database size too small (0). Provide at least 50 motifs for accurate p-value computation
+web_1  | Segmentation fault (core dumped)
+web_1  | [29/Apr/2019 12:52:28]"POST /comparison/ HTTP/1.1" 500 1706
+web_1  | [29/Apr/2019 12:54:00]"GET /score HTTP/1.1" 301 0
+web_1  | [29/Apr/2019 12:54:00]"GET /score/ HTTP/1.1" 200 9944
+web_1  | [29/Apr/2019 12:54:02]"GET /comparison/ HTTP/1.1" 200 7714
+web_1  | [29/Apr/2019 12:54:03]"GET / HTTP/1.1" 200 6628
+web_1  | [29/Apr/2019 12:54:05]"GET /comparison/ HTTP/1.1" 200 7714
+web_1  | Errors from MEME text parser:
+web_1  | The pspm of motif ATF1_si.HOCOMOCO has a width value -1 which is invalid as it is not larger than zero.
+web_1  | Warning: the database "Atf1" did not contain ANY loadable motifs!
+web_1  | Errors from MEME text parser:
+web_1  | The pspm of motif ATF1_si.HOCOMOCO has a width value -1 which is invalid as it is not larger than zero.
+web_1  | Warning: the database "Atf1" did not contain ANY loadable motifs!
+web_1  | Warning: Target database size too small (0). Provide at least 50 motifs for accurate p-value computation
+web_1  | Segmentation fault (core dumped)
+web_1  | [29/Apr/2019 12:54:08]"POST /comparison/ HTTP/1.1" 500 1706
+web_1  | [29/Apr/2019 12:54:47]"GET /enrichment/ HTTP/1.1" 200 8107
+web_1  | [29/Apr/2019 12:54:49]"POST /enrichment/ HTTP/1.1" 200 3681
+web_1  | [29/Apr/2019 12:54:58]"POST /enrichment/ HTTP/1.1" 200 3681
+web_1  | [29/Apr/2019 12:55:07]"GET /enrichment/ HTTP/1.1" 200 8107
+web_1  | [29/Apr/2019 12:55:08]"GET /score/ HTTP/1.1" 200 9944
+web_1  | [29/Apr/2019 12:55:14]"POST /score/ HTTP/1.1" 200 5651
+web_1  | [29/Apr/2019 12:55:18]"POST /score/ HTTP/1.1" 200 5651
+web_1  | [29/Apr/2019 12:56:36]"GET /enrichment/ HTTP/1.1" 200 8107
+web_1  | [29/Apr/2019 13:02:43]"POST /enrichment/ HTTP/1.1" 200 3681
+web_1  | [29/Apr/2019 13:02:46]"GET /score/ HTTP/1.1" 200 9944
+web_1  | [29/Apr/2019 13:02:46]"GET /favicon.ico HTTP/1.1" 404 4565
+web_1  | - Broken pipe from ('172.19.0.1', 39870)
+web_1  | [29/Apr/2019 13:02:48]"GET /enrichment/ HTTP/1.1" 200 8107
+web_1  | [29/Apr/2019 13:02:55]"GET /search/ HTTP/1.1" 200 5894
+web_1  | [29/Apr/2019 14:04:43]"POST /search/ HTTP/1.1" 500 745
+web_1  | [29/Apr/2019 14:04:46]"GET /comparison/ HTTP/1.1" 200 7714
+web_1  | Errors from MEME text parser:
+web_1  | The pspm of motif ATF1_si.HOCOMOCO has a width value -1 which is invalid as it is not larger than zero.
+web_1  | Warning: the database "Atf1" did not contain ANY loadable motifs!
+web_1  | Errors from MEME text parser:
+web_1  | The pspm of motif ATF1_si.HOCOMOCO has a width value -1 which is invalid as it is not larger than zero.
+web_1  | Warning: the database "Atf1" did not contain ANY loadable motifs!
+web_1  | Warning: Target database size too small (0). Provide at least 50 motifs for accurate p-value computation
+web_1  | Segmentation fault (core dumped)
+web_1  | [29/Apr/2019 14:04:48]"POST /comparison/ HTTP/1.1" 500 1706
+web_1  | Errors from MEME text parser:
+web_1  | The pspm of motif ATF1_si.HOCOMOCO has a width value -1 which is invalid as it is not larger than zero.
+web_1  | Warning: the database "Atf1" did not contain ANY loadable motifs!
+web_1  | Errors from MEME text parser:
+web_1  | The pspm of motif ATF1_si.HOCOMOCO has a width value -1 which is invalid as it is not larger than zero.
+web_1  | Warning: the database "Atf1" did not contain ANY loadable motifs!
+web_1  | Warning: Target database size too small (0). Provide at least 50 motifs for accurate p-value computation
+web_1  | Segmentation fault (core dumped)
+web_1  | [29/Apr/2019 14:04:52]"POST /comparison/ HTTP/1.1" 500 1706
+web_1  | Errors from MEME text parser:
+web_1  | The pspm of motif ATF1_si.HOCOMOCO has a width value -1 which is invalid as it is not larger than zero.
+web_1  | Warning: the database "Atf1" did not contain ANY loadable motifs!
+web_1  | Errors from MEME text parser:
+web_1  | The pspm of motif ATF1_si.HOCOMOCO has a width value -1 which is invalid as it is not larger than zero.
+web_1  | Warning: the database "Atf1" did not contain ANY loadable motifs!
+web_1  | Warning: Target database size too small (0). Provide at least 50 motifs for accurate p-value computation
+web_1  | Segmentation fault (core dumped)
+web_1  | [29/Apr/2019 14:04:56]"POST /comparison/ HTTP/1.1" 500 1706
+web_1  | [29/Apr/2019 14:04:57]"GET /score/ HTTP/1.1" 200 9944
+web_1  | [29/Apr/2019 14:05:00]"POST /score/ HTTP/1.1" 200 5651
+web_1  | [29/Apr/2019 14:05:04]"GET /enrichment/ HTTP/1.1" 200 8107
+
+Cant
+
+Specific areas of code refactoring ( ) 
+###   
+Error: Starting the service has thrown an error  about missing dependencies....
+web_1  |     from .qt_compat import QtCore, QtGui, QtWidgets, _getSaveFileName, __version__
+web_1  |   File "/opt/conda/envs/MARS/lib/python2.7/site-packages/matplotlib/backends/qt_compat.py", line 137, in <module>
+web_1  |     from PyQt4 import QtCore, QtGui
+web_1  | ImportError: No module named PyQt4
+bioinfo_web_1 exited with code 1
+###
+
+### Conflicts between dependencies #### 
+  Starting an interactive shell to test the installation using conda.....
+root@3da36a5cf6d5:/conda# conda install pyqt=4
+Fetching package metadata ...........
+Solving package specifications: .
+
+UnsatisfiableError: The following specifications were found to be in conflict:
+  - pyqt 4* -> python 2.6*
+  - python 3.6*
+Use "conda info <package>" to see the dependencies for each package.
+
+root@3da36a5cf6d5:/conda# python --version
+Python 2.7.12 :: Continuum Analytics, Inc.
+root@3da36a5cf6d5:/conda# 
+

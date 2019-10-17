@@ -1,0 +1,24 @@
+version: "3"
+services:
+  db:
+    image: mysql:5.7
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mars2019
+      MYSQL_DATABASE: MAT_db
+      MYSQL_USER: root
+  # web:
+  #   image: g19m2952/mars_web:test1 # with sqlite3 database
+  #   #image: g19m2952/mars_web:settings_1.00 #with mysql database
+  #   # # build: .
+  #   # command: python /code/manage.py runserver 0.0.0.0:8000
+  #   # volumes:
+  #   #   - .:/code
+  #   ports:
+  #     - 8000:8000
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8088:8080

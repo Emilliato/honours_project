@@ -1,0 +1,50 @@
+﻿The container is using the base environment instead of the MARS environment.
+Small code snipet here to show what the image is showing
+
+code snipet to change it.
+
+FROM g19m2952/mars_web:sqlite
+RUN echo "source activate MARS" > ~/.bashrc
+ENV PATH /opt/conda/envs/MARS/bin:$PATH
+
+Result
+
+
+
+docker build -t g19m2952/mars_web:sqlite_1.00 . #buid the image
+docker push g19m2952/mars_web:sqlite_1.00   #push the image to docker hub after testing
+
+The image g19m2952/mars_web:sqlite_1.00 contains an sqlite database and uses the correct MARS environment not Anaconda base environment.
+Source https://medium.com/@chadlagore/conda-environments-with-docker-82cdc9d25754
+
+Now we need to modify the settings image to contain the database file that has settings for mysql only.
+
+1. Edit the file first, 
+
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.mysql',
+         'NAME': 'MAT_db',
+         'USER': 'mars',
+         'PASSWORD': 'mars2019',
+         'HOST': 'db',
+         'PORT': 3306,
+         }
+ }
+
+
+
+2. Write a Dfile 
+
+FROM g19m2952/mars_web:settings
+COPY settings.py /code/MAT
+WORKDIR /code/MAT
+RUN cat settings.py
+
+3. Build and push
+docker build -t g19m2952/mars_web:settings_1.00 . #buid the image
+docker push g19m2952/mars_web:settings_1.00   #push the image to docker hub after
+
+Version two of changes is in the settings file for sqlite
+remove un necesarry stuff, hide the secret key, email addresses and other stuff.
+

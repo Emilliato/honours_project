@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: g19m2952/marsdb:latest
+    environment:
+      - MYSQL_DATABASE=MAT_db
+      - MYSQL_USER=mars
+      - MYSQL_PASSWORD=mars2019
+    ports:
+      - "3306:3306"
+
+
+  admin:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

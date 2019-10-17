@@ -1,0 +1,19 @@
+
+version: '3'
+services:
+  web:
+    image: g19m2952/mars_web:sqlite_1.00 # with sqlite3 database
+    deploy:
+          replicas: 3
+          resources: #Specify resources to use here
+            limits:
+              cpus: "0.1"
+              memory: 50M
+          restart_policy:
+            condition: on-failure
+    ports:
+      - "8000:8000"
+    networks:
+      - webnet
+networks:
+  webnet:

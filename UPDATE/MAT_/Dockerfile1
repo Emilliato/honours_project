@@ -1,0 +1,5 @@
+FROM g19m2952/mars_web:settings
+
+COPY settings.py /code/MAT
+WORKDIR /code/MAT
+RUN cat settings.py

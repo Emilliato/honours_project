@@ -1,0 +1,30 @@
+version: '3'
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "mars2019"
+      MYSQL_USER: "mars"
+      MYSQL_PASSWORD: "mars2019"
+      MYSQL_DATABASE: "MAT_db"
+    ports:
+      - "3306:3306"
+    networks:
+      - my_new_network
+  web:
+    image: g19m2952/mars_web:test2
+    ports:
+      - "8000:8000"
+    networks:
+      - my_new_network
+    depends_on:
+      - db
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+    networks:
+      - my_new_network
+networks:
+  my_new_network:
+    driver: bridge

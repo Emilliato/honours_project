@@ -1,0 +1,7 @@
+FROM mysql:latest
+ENV MYSQL_ROOT_PASSWORD mars
+ENV MYSQL_DATABASE MAT_db
+ENV MYSQL_USER mars
+ENV MYSQL_PASSWORD mars2019
+ADD MAT_db.sql /docker-entrypoint-initdb.d
+EXPOSE 3306

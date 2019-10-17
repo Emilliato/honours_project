@@ -1,0 +1,57 @@
+MEME version 4.4
+
+ALPHABET= ACGT
+
+strands: + -
+
+Background letter frequencies (from uniform background):
+A 0.25000 C 0.25000 G 0.25000 T 0.25000 
+
+MOTIF ATF1_si.HOCOMOCO ATF1
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF Atf1.HOMER K562-ATF1-ChIP-Seq
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF UP00020_1.UNIPROBE Atf1_primary
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF UP00020_2.UNIPROBE Atf1_secondary
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF UP00020.1.ZHAO2011 sci09.v1_Atf1_3026
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF UP00020.2.ZHAO2011 sci09.v2_Atf1_3026
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF ATF1_1.GUERTIN ATF1
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF ATF1_2.GUERTIN ATF1
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF ATF1_3.GUERTIN ATF1
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF ATF1_4.GUERTIN ATF1
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF Atf1.TF2DNA Atf1
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+
+MOTIF M6152_1.02.CIS-BP ATF1
+
+letter-probability matrix: alength= 4 w= -1 nsites= 20 E= 0
+

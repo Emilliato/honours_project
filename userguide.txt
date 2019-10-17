@@ -1,0 +1,5 @@
+1. Install Docker for any operating system  you are working with
+  Steps for installing Docker on any Linux Distribution are can be found in the document named dockerInstall.txt inside the run folder.
+2. Simple run of the application use the command
+  docker run -p 8000:8000 -d -t g19m2952/mars_web:sqlite_1.00
+3. For more advanced features like docker Stacks and swarm please refer to   the document advanced.txt in the folder named RUN.
