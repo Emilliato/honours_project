@@ -10,9 +10,9 @@ There are two ways of running this application:
 ### **Simple way**
 This can be used if you want to run a single instance of your application. To do that you can run the command:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```**$** docker run -p 8000:8000 -d -t g19m2952/mars_web:sqlite_1.00 ```
+&nbsp;&nbsp;&nbsp;&nbsp;**$**``` docker run -p 8000:8000 -d -t g19m2952/mars_web:sqlite_1.00 ```
 
-**NOTE** This will run the container in the background and exposes maps port ```8000``` of the container to port ```8000``` on the host. So make sure that port ```8000``` is not allocated to any other service on your server. 
+**NOTE:** This will run the container in the background and exposes maps port ```8000``` of the container to port ```8000``` on the host. So make sure that port ```8000``` is not allocated to any other service on your server. 
 
 The application can now be accessed on the browser using ```localhost:8000```
 
