@@ -45,11 +45,12 @@ where "mars" is that you are giving your service.
 
 **NOTE** It will take about 10 min for the application to be accessible on the browser using ```localhost:8000``` as the address.
 
-***All done!***
-
 You can use the following commands to monitor the service:
 
 ```docker stack ps mars``` #to view the status of the service
 
 ```docker node ls``` to view all the nodes in a cluster
 
+```docker-machine ls``` to get detailed information about the machines in a cluster
+
+***Congratulations!*** your application can be accessed through the an IP address of any machine in the cluster. The manager can be used to check the status of any node in the cluster.
