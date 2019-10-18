@@ -19,4 +19,4 @@ The application can now be accessed on the browser using ```localhost:8000```
 ### **More advanced way**
 If you want to scale up the application i.e running multiple instances of the application or distribute the application into a cluster you can refer to the advanced guide [here](https://github.com/Emilliato/honours_project/blob/master/RUN/advanced.md).
 
-####**Thank you!**
+#### **Thank you!**
