@@ -120,7 +120,7 @@ DATABASES = {
          'ENGINE': 'django.db.backends.mysql',
          'NAME': 'db',
          'USER': 'root',
-         'PASSWORD': 'mars2019',
+         'PASSWORD': '',
          'HOST': 'mars_db',
          'PORT': 3306
          }
