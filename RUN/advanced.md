@@ -47,7 +47,7 @@ where "mars" is that you are giving your service.
 
 You can use the following commands to monitor the service:
 
-```docker stack ps mars``` #to view the status of the service
+```docker stack ps mars``` to view the status of the service
 
 ```docker node ls``` to view all the nodes in a cluster
 
