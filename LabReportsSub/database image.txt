@@ -1,0 +1,24 @@
+Steps:
+  1. Pull the mysql image to your machine
+    docker run --name mars_mysql -e MYSQL_ROOT_PASSWORD=mars -d mysql:latest --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+   Notes:
+   -mars_mysql is the name you want to give to your image
+   -mars is the root password(We are going to use the root user for now but will change later to make it secure)
+   - (-d) option runs it in the background
+   - the rest are the character sets no need to change them
+
+  2. Test your container by changing the password to a more secure one
+     a). First Connect to MySQL Server from within the Container
+          docker exec -it mars_mysql mysql -uroot -p
+     b). Run the command to change the password
+           ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
+    Notes:
+     -Now that we have made the changes to our image lets save the work and push it to a repository where we can access it whenever we want it
+  3. Login to dockerhub(If you dont have an account create one)
+    ## Save changes and rename your container
+    docker commit <container_id> <user_name/new_image_name>
+
+    ## run the container before you push it to your registry
+    docker push <image_name>
+Done!! Now you can download your image using
+ docker pull <image_name>

@@ -1,0 +1,10 @@
+The Mars project has a database, and dependencies that need to be installed on a conda environment. 
+To archive this we are going to use a docker image that have a conda environment installed already.
+This saves time and helps in avoiding errors during conda installation.
+
+A Dockerfile can be used to create an image and run all the commands for configuting an image or packaging a software. 
+
+Here is a snapshot of the first Dockerfile that has all dependencies installed.
+Installation steps. 
+  1st Make sure that docker has been installed and running. if not checkout the installation guide 
+  

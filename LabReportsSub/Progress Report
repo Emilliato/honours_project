@@ -1,0 +1,17 @@
+## 05/04/2019
+# Building a docker container for Mars Tools
+Mars Tools environment has to be created first before the main Mars environment has been created
+To create an environment for Mars tools make use of switching between directories.
+
+Managed to install dependencies
+After installing dependencies the  container was failing to run in the background.
+Problem was being caused by specifying an entry point which when specified in appropriately solved by removing the ENTRYPOINT specification.
+container stops when you try to run the docker run command for running the container in the background.
+  ---- docker run -t -d image_name -----
+Enables us to run other inspection commands such as
+ ---- docker exec -i -t container_id bash ---
+
+No modude called rest_framework
+django.db.utils.OperationalError: (2002, "Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)")
+
+#Start by running compose 

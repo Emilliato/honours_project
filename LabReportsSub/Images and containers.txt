@@ -1,0 +1,33 @@
+Step 1 Customizing an image
+
+Pulling, making changes and pushing your container to docker hub
+
+#Pulling an image
+docker run <image_name>
+
+#running a container in the background
+docker run -it -d <image_name>
+
+#login to the container
+docker exec -it <image_id> bash
+
+----you can create a directory and many more
+
+#Save changes and rename your container
+docker commit <container_id> <user_name/new_image_name>
+
+# run the container before you push it to your registry
+docker push <image_name>
+#error encountered (push failed, required me to login first)
+
+# removing all images
+ docker image prune -a
+# removing all containers
+  docker system prune
+# -a removes both containers and images
+
+### Mars container database image
+mars_mysql
+user: root
+password mars2019
+### Mars container database image changed name to marsdb added user mars

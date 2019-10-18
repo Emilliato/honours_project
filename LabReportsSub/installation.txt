@@ -1,0 +1,57 @@
+Installing Docker on Unix environment.
+Ref https://docs.docker.com/install/linux/docker-ce/ubuntu/
+Docker CE is a free version of docker used for test purposes.
+Step.1 Remove all previous versions if any
+  sudo apt-get remove docker docker-engine docker.io containerd runc
+Step.2 Update your system
+  sudo apt-get update
+Step.3 Install packages to allow apt to use a repository over HTTPS:
+  sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+Step.4 Add Docker’s official GPG key:
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+  To veryfy if it has worked use the command below:
+  sudo apt-key fingerprint 0EBFCD88
+
+    You should get something like this as your response
+    pub   rsa4096 2017-02-22 [SCEA]
+      9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
+      uid           [ unknown] Docker Release (CE deb) <docker@docker.com>
+      sub   rsa4096 2017-02-22 [S]
+ Step.5 Setup a stable repository
+    sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+Repeat step 2.
+
+Step.6 Install the latest version of Docker CE and containerd
+  sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+All Done
+Step 7. Verify that docker CE was successsfully installed by running a test image.
+  sudo docker run hello-world
+NB. To use Docker at this stage you should use sudo command before Docker command.
+ Fix run as non root
+ sudo usermod -aG docker 'your-user'
+ Then restart or logout and login again for the changes to take effect.
+
+Guides for windows
+  https://docs.docker.com/docker-for-windows/install/
+Guides for Mac Os
+  https://docs.docker.com/docker-for-mac/
+## Docker Compose
+This is used to run our application on a development server in our container.
+### Installation
+  1. Run command to download docker compose
+   sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  2. To Apply executable permissions to the binary run:
+    sudo chmod +x /usr/local/bin/docker-compose
+
+## Errors
+ MIDDLEWARE_CLASSES is not set
