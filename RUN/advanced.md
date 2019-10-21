@@ -1,4 +1,4 @@
-## Running the multiple instances of the same application
+## Running multiple instances of the same application
 To run mutiple instances of the same application (Scaling up the application).
 
 Navigate to the folder with the docker-compose.yml file then run the following commands. The file can be found [here](https://github.com/Emilliato/honours_project/blob/master/RUN/docker-compose.yml)
